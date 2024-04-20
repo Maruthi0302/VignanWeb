@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 120px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 120px;
+}
+#box1{
+    width: 300px;
+}
+#box2{
+    width: 2000px;
+    background-color: #933993;
+    text-align: center;
+}
+#clgname{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Jacquard 24", system-ui;
+}
+#text1,#text2{
+    font-size: 22px;
+    color: #ffffff;
+}
+#scrolltext{
+    font-size: 20px;
+    font-weight: bold;
+}
+.navigation{
+    border: solid 1px;
+    height: 55px;
+}
+ul li{
+    border: solid 1px;
+    height: 55px;
+    float: left;
+    width: 155px;
+    text-align: center;
+    line-height: 53px;
+    background-color:#ffebcd;
+    position: relative;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: #000080;
+    font-size: 22px;
+    text-decoration: none;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul li:hover>ul{
+    display: block;
+}
+ul li ul li{
+    width:250px;
+    background-color:#b0c4de;
+}
+ul li ul li ul li{
+    width: 300px;
+    margin-left: 253px;
+}
+ul ul ul{
+    top: 0px;
+}
+ul li:hover{
+    background-color:#daa520;
+}
+ul li ul li:hover{
+    background-color: #8fbc8f;
+}
+.arrow{
+    color: #f0ffff;
+    font-size: 20px;
+}
+.obox{
+    border: solid 1px;
+    height: 400px;
+    display: flex;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 400px;
+}
+#in1{
+    width: 800px;
+    background-image: url(clgpic5.jpeg);
+    background-repeat: no-repeat;
+    background-size: 800px 400px;
+    animation-name: imageschanging;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imageschanging{
+    10%{
+        background-image: url(clgpic.jpeg);
+    }
+    20%{
+        background-image: url(clgpic2.jpeg);
+    }
+    40%{
+        background-image: url(clgpic4.jpeg);
+    }
+    40%{
+        background-image: url(clgpic3.jpeg);
+    }
+}
+#in2,#in3{
+    width: 400px;
+}
+.out{
+    border: solid 1px;
+    height: 155px;
+    background-color: black;
+}
+#logo{
+    padding-right: 170px;
+}
